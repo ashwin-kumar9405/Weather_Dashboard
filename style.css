@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg ,#2d42a1, #7c48b0);
+    min-height: 100vh;
+    padding:20px;
+    color:#333;
+
+}
+.container{
+    max-width: 1200px;
+    margin:auto;
+
+}
+.header{
+    text-align: center;
+    color: #fcfcfc;
+    margin-bottom:30px ;
+}
+.header h1{
+    font-size: 2.5em;
+}
+.search-box{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    margin-bottom: 30px;
+}
+.search-box input{
+    padding:12px;
+    width:300px;
+    border:none;
+    border-radius:20px;
+}
+.search-box button{
+    padding:12px;
+    border-radius:15px;
+    background-color: rgb(61, 255, 47);
+    color: white;
+    border:none;
+    cursor: pointer;
+}
+.currentWeather,
+.forecast-section{
+    background:pink;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.current-weather-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.location{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.date{
+    color:gray
+}
+.current-main{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.weather-icon{
+    font-size:5em;
+}
+.temperature{
+    font-size: 3.5em;
+    font-weight: bold;
+    color:#667eea
+}
+.description{
+    color:grey;
+}
+.weatherDetails{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap:20px;
+}
+.detail-item{
+    background: #f2f2f2;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+}
+.value{
+    font-weight:bold;
+    font-size:1.3em;
+}
+.hourly-forecast{
+    background: #f2f2f2;
+    padding:10px;
+    border-radius:10px;
+    min-width: 100px;
+    text-align: center;
+}
+.dailyforecast{
+    background: #f2f2f2;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+}
+.loading{
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+}
+.error{
+    background: red;
+    color:#fff;
+    padding:10px;
+    text-align: center;
+    border-radius: 10px;
+}
