@@ -44,7 +44,7 @@ body{
     border:none;
     cursor: pointer;
 }
-.currentWeather,
+.current-weather,
 .forecast-section{
     background:pink;
     padding: 25px;
@@ -80,7 +80,7 @@ body{
 .description{
     color:grey;
 }
-.weatherDetails{
+.weather-details{
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
     gap:20px;
@@ -96,17 +96,30 @@ body{
     font-size:1.3em;
 }
 .hourly-forecast{
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px;
+}
+.hourly-item{
     background: #f2f2f2;
-    padding:10px;
-    border-radius:10px;
+    padding: 15px;
+    border-radius: 10px;
     min-width: 100px;
     text-align: center;
+    flex-shrink: 0;
 }
-.dailyforecast{
+.daily-forecast{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+.daily-item{
     background: #f2f2f2;
-    padding:15px;
-    border-radius:10px;
-    text-align:center;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
 }
 .loading{
     text-align: center;
